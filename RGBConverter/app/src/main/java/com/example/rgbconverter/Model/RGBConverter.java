@@ -11,7 +11,8 @@ public class RGBConverter implements IObservable
     
     private List<IObserver> obServers = new ArrayList<>();
     private String hexValue = "";
-    
+
+    // Converts rgb to Hex value then saves it then notifies Observers
     public void CalculateHex(int red, int green, int blue)
     {
         hexValue = String.format("#%02x%02x%02x", red, green, blue);
