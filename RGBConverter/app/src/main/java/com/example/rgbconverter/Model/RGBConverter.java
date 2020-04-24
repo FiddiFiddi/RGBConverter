@@ -6,11 +6,11 @@ import com.example.rgbconverter.Interface.IObserver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RgbConverter implements IObservable
+public class RGBConverter implements IObservable
 {
     
-    List<IObserver> obServers = new ArrayList<>();
-    String hexValue = "";
+    private List<IObserver> obServers = new ArrayList<>();
+    private String hexValue = "";
     
     public void CalculateHex(int red, int green, int blue)
     {

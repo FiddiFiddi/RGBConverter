@@ -2,17 +2,17 @@ package com.example.rgbconverter;
 
 import com.example.rgbconverter.Contracts.RGBConverterContract;
 import com.example.rgbconverter.Interface.IObserver;
-import com.example.rgbconverter.Model.RgbConverter;
+import com.example.rgbconverter.Model.RGBConverter;
 
 public class Presenter implements RGBConverterContract.Presenter, IObserver
 {
     private RGBConverterContract.View view;
-    private RgbConverter rgbConverter;
+    private RGBConverter rgbConverter;
     
     Presenter(RGBConverterContract.View view)
     {
         this.view = view;
-        rgbConverter = new RgbConverter();
+        rgbConverter = new RGBConverter();
         rgbConverter.addObserver(this);
     }
 

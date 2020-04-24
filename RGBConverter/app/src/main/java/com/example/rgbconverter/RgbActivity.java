@@ -21,7 +21,7 @@ public class RgbActivity extends AppCompatActivity implements RGBConverterContra
     private int green = 0;
     private int blue = 0;
     
-    RGBConverterContract.Presenter presenter;
+    private RGBConverterContract.Presenter presenter;
     
     @Override
     protected void onCreate(Bundle savedInstanceState)
