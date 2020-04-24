@@ -2,28 +2,30 @@ package com.example.rgbconverter;
 
 import com.example.rgbconverter.Contracts.RGBConverterContract;
 import com.example.rgbconverter.Interface.IObserver;
+import com.example.rgbconverter.Model.RgbConverter;
 
 public class Presenter implements RGBConverterContract.Presenter, IObserver
 {
-    RGBConverterContract.View view;
-    Presenter(RGBConverterContract.View view){
+    private RGBConverterContract.View view;
+    private RgbConverter rgbConverter;
+    
+    Presenter(RGBConverterContract.View view)
+    {
         this.view = view;
+        rgbConverter = new RgbConverter();
+        rgbConverter.addObserver(this);
     }
 
     @Override
-    public void setHex()
+    public void calculateHex(int r, int g, int b)
     {
-    
+        rgbConverter.CalculateHex(r,g,b);
     }
     
     @Override
-    public void calculateHex()
+    public void onChange(String hexValue)
     {
-    
-    }
-
-    @Override
-    public void onChange(String hexValue) {
-        // view.setHex()
+        view.setHex(hexValue);
+        
     }
 }

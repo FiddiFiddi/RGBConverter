@@ -5,13 +5,12 @@ public interface RGBConverterContract
     interface View
     {
         void setColor();
-        void setHex();
-        void calculateHex();
+        void setHex(String hexText);
+        void calculateHex(int r, int g, int b);
     }
     
     interface Presenter
     {
-        void setHex();
-        void calculateHex();
+        void calculateHex(int r, int g, int b);
     }
 }
