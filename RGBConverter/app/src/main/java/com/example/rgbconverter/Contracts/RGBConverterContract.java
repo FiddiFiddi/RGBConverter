@@ -1,5 +1,4 @@
 package com.example.rgbconverter.Contracts;
-
 public interface RGBConverterContract
 {
     interface View

@@ -49,10 +49,13 @@ public class RgbActivity extends AppCompatActivity implements RGBConverterContra
     @Override
     public void setColor()
     {
+        // Gets the hex value
         int color = Color.parseColor(hexText.getText().toString());
+        // Parses hex value to int for presenting
         colorBox.setBackgroundColor(color);
     }
-    
+
+    // Presents Hex value to client
     @Override
     public void setHex(String hexText)
     {
@@ -66,7 +69,8 @@ public class RgbActivity extends AppCompatActivity implements RGBConverterContra
         //get colors.
         presenter.calculateHex(r, g, b);
     }
-    
+
+    // When a seek bar is used
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b)
     {
