@@ -23,9 +23,7 @@
             android:layout_margin="10dp"
             android:progressTint="@color/red"
             android:thumbTint="@color/red">
-
         </SeekBar>
-
         <SeekBar
             android:id="@+id/seek_bar_green"
             android:layout_width="match_parent"
@@ -33,7 +31,6 @@
             android:layout_margin="10dp"
             android:progressTint="@color/green"
             android:thumbTint="@color/green">
-
         </SeekBar>
 
         <SeekBar
@@ -59,9 +56,7 @@
             android:layout_height="match_parent"
             android:textSize="40sp"
             android:text="#000000">
-
         </TextView>
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

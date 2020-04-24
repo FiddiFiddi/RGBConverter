@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.rgbconverter.Contracts.RGBConverterContract;
+
 public class rgb_activity extends AppCompatActivity implements RGBConverterContract.View
 {
     @Override
@@ -11,7 +13,7 @@ public class rgb_activity extends AppCompatActivity implements RGBConverterContr
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rgb_activity);
-        
+        Presenter pres = new Presenter(this);
         
         
     }

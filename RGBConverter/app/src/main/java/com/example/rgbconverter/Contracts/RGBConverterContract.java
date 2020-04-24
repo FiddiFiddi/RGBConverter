@@ -1,6 +1,6 @@
-package com.example.rgbconverter;
+package com.example.rgbconverter.Contracts;
 
-interface RGBConverterContract
+public interface RGBConverterContract
 {
     interface View
     {
